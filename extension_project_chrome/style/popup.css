@@ -1,0 +1,116 @@
+body{
+width:350px !important;
+height:250px !important;		
+}
+img{
+	position:absolute;
+	margin-top:8px;
+	margin-left:8px;
+	width:48px;
+	height:48px;
+}
+.title{
+	font-size:2rem;
+	text-overflow:ellipses;
+	line-height:1.25em;
+	color:rgba(82,81,81,0.89);
+	letter-spacing:0.01em;
+	margin-left:68px;
+	margin-top:8px;
+	margin-bottom:0px;
+}
+div.title-container{
+	display:inline-block !important;
+	overflow: hidden;
+}
+.balance{
+	font-size:20px;
+	font-family:sans_big_light;
+	margin-left:68px;
+	color:rgba(0,128,0,0.86);
+}
+.status{
+	margin-left:10px;
+}
+div.status{
+	 cursor: pointer;
+}
+
+
+
+
+/* Reset responsive Bootstrap elements */
+#navbar2 .navbar-header {
+    float: none;
+}
+
+#navbar2 .navbar-toggle {
+    display: block;
+}
+
+#navbar2 .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px;
+}
+
+#navbar2 .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+#navbar2 .navbar-form {
+    float: none !important;
+    padding: 0;
+}
+
+#navbar2 .navbar-nav>li {
+    float: none;
+}
+
+/* Reposition elements affected by the sliding menu */
+#wrapper {
+    position: relative;
+    right: 0;
+    transition: right 0.35s ease;
+}
+
+#navbar2 .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -80%;
+    display: block;
+    width: 80%;
+    height: 100% !important;
+    /*max-height: 100%;*/
+    margin: 0;
+    background-color: #f8f8f8;
+    transition: right 0.35s ease;
+}
+
+#navbar2 .navbar-collapse.collapsing {
+    transition: right 0.35s ease;
+}
+
+#navbar2 .navbar-collapse.in {
+    right: 0;
+}
+
+body.menu-slider.in {
+    overflow: hidden;
+}
+p.list-group-item-text{
+	font-size:1.58rem;
+	line-height:1.25em;
+	letter-spacing:0.01em;
+}
+
+body.menu-slider #wrapper {
+    transition: right 0.35s ease;
+}
+
+body.menu-slider.in #wrapper {
+    right: 80%;
+}

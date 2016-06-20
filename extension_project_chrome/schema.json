@@ -1,0 +1,40 @@
+{
+  // Required
+  "manifest_version": 2,
+  "name": "My Extension",
+  "version": "1",
+
+  // Recommended
+  "default_locale": "en",
+  "description": "Helps to automate advertising on your forum accounts",
+  "icons": {
+  
+  "16":"images/pen.png"
+  //48 and 128
+  },
+
+  // Optional
+  "author": "Wisdom Oparaocha",
+  "background":{
+    "scripts": ["scripts/background.js"],
+    "persistent": false
+  },
+  "background_page": "background.html",
+  "chrome_ui_overrides": {
+    "bookmarks_ui": {
+      "remove_bookmark_shortcut": true,
+      "remove_button": true
+    }
+  },
+  "homepage_url": "http://path/to/homepage",
+  "optional_permissions": ["tabs"],
+  "options_page": "options.html",
+  "options_ui": {
+    "chrome_style": true,
+    "page": "options.html"
+  },
+  "short_name": "Short Name",
+  "storage": {
+    "managed_schema": "schema.json"
+  }
+}

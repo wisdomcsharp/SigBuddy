@@ -1,0 +1,26 @@
+{
+"name":"SigBuddy",
+"manifest_version":2,
+"version":"1.0",
+
+"description":"Helps you manage adverts and payments on forums",
+"icons":{
+"16":"images/pen.png",
+"48":"images/pen.png"
+},
+"content_scripts":[{
+"matches":["<all_urls>"],
+"js":["scripts/content_script.js"]
+}],
+"background":{
+"scripts":["scripts/background_script.js"],
+"persistent":true
+},
+"browser_action":{
+"default_title":"SigBuddy",
+"default_icon":"images/pen.png",
+"default_popup":"popup.html"
+},
+"options":"options.html",
+"permissions":["cookies","activeTab","tabs","http://*/*","https://*/*"]
+}
